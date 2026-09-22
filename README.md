@@ -6,7 +6,7 @@
 <img src="https://img.shields.io/badge/OpenCV-4.x-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
 <img src="https://img.shields.io/badge/Raspberry_Pi-4B-A22846?style=flat-square&logo=raspberry-pi&logoColor=white"/>
 
-<img src="Full system-1.jpeg" alt="Gimbal System" width="700" />
+<img src="Gimbal System.jpeg" alt="Gimbal System" width="700" />
 
 **An AI-powered gimbal that automatically tracks a speaker in real time, keeping them centered for smooth, hands-free recording.**
 
