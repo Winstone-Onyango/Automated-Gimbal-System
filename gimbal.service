@@ -1,0 +1,24 @@
+[Unit]
+Description=Gimbal Project
+After=network.target
+
+[Service]
+User=titan
+Group=titan
+
+# Working directory
+WorkingDirectory=/home/titan/project
+
+ExecStart=/usr/bin/bash /home/titan/project/start.sh
+
+# Restart policy
+Restart=always
+RestartSec=5
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+    

@@ -1,0 +1,5 @@
+deploy.prototxt
+res10_300x300_ssd_iter_140000.caffemodel
+venv/
+.ruff_cache/
+__pycache__/
