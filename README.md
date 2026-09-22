@@ -6,11 +6,11 @@
 <img src="https://img.shields.io/badge/OpenCV-4.x-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
 <img src="https://img.shields.io/badge/Raspberry_Pi-4B-A22846?style=flat-square&logo=raspberry-pi&logoColor=white"/>
 
-![Gimbal System](<Full system-1.jpeg>)
+<img src="Full system-1.jpeg" alt="Gimbal System" width="700" />
 
 **An AI-powered gimbal that automatically tracks a speaker in real time, keeping them centered for smooth, hands-free recording.**
 
-<img src="docs/demo.gif" width="700"/>
+<img src="docs/demo.gif" width="650" alt="Demo GIF" />
 
 </div>
 
@@ -61,7 +61,7 @@ The pipeline is a closed feedback loop. Each frame captured from the IP webcam i
 ## 3-D Printed Parts and Assembly
 
 The mechanical frame of the gimbal is fully 3D-printed, making it easy to replicate, modify, and repair. All parts were designed in **AutoCAD** and printed.
-![3-D Printed System Parts](<CAD drawings.jpeg>)
+<img src="CAD drawings.jpeg" alt="3-D Printed System Parts" width="650" />
 
 
 ---
@@ -69,7 +69,7 @@ The mechanical frame of the gimbal is fully 3D-printed, making it easy to replic
 ## Circuit Diagram
 
 The electronics are built around the Raspberry Pi's GPIO header. Each stepper motor is driven by a dedicated A4988 or DRV8825 driver module, which handles the high-current coil switching while the Pi only provides step, direction, and enable signals.
-![Circuit Diagram](<Circuit Diagram.jpeg>)
+<img src="Circuit Diagram.jpeg" alt="Circuit Diagram" width="650" />
 
 
 ---
@@ -87,7 +87,7 @@ The electronics are built around the Raspberry Pi's GPIO header. Each stepper mo
 9. **Actuate** — Pan and tilt motors move asynchronously in background threads.
 10. **Repeat** — The loop runs continuously, keeping the speaker centered.
 
-![System Diagram](<Full system.jpeg>)
+<img src="Full system.jpeg" alt="System Diagram" width="700" />
 ---
 
 
