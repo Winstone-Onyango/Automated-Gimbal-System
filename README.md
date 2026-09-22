@@ -6,8 +6,9 @@
 <img src="https://img.shields.io/badge/OpenCV-4.x-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
 <img src="https://img.shields.io/badge/Raspberry_Pi-4B-A22846?style=flat-square&logo=raspberry-pi&logoColor=white"/>
 
+![Gimbal System](<Full system-1.jpeg>)
 
-**An AI-powered robotic gimbal that automatically tracks a speaker in real time, keeping them centered for smooth, hands-free recording.**
+**An AI-powered gimbal that automatically tracks a speaker in real time, keeping them centered for smooth, hands-free recording.**
 
 <img src="docs/demo.gif" width="700"/>
 
@@ -17,13 +18,13 @@
 
 ## Why This Project?
 
-> Traditional camera setups often require manual operation, making it difficult to continuously keep a speaker or subject within the camera frame during lectures, events, and surveillance. Existing automated tracking systems can also be expensive and complex to deploy. This project addresses this challenge by developing a low-cost AI-powered robotic gimbal system that uses computer vision to detect and track a speaker in real time, automatically controlling pan and tilt movement to keep the subject centered while recording.
+> Traditional camera setups often require manual operation, making it difficult to continuously keep a speaker or subject within the camera frame during lectures, events, and surveillance. Existing automated tracking systems can also be expensive and complex to deploy. This project addresses this challenge by developing a low-cost robotic gimbal system that uses computer vision to detect and track a speaker in real time, automatically controlling pan and tilt movement to keep the subject centered while recording.
 
-The system combines a **Raspberry Pi 4**, an **IP webcam**, a **deep neural network (DNN) face detector**, and a **dual stepper motor pan-tilt mechanism**. It runs entirely on the edge, no cloud, no subscription, no external compute. Just plug in, power up, and the gimbal handles the rest. Whether you are recording a lecture, streaming a presentation, or setting up an unattended surveillance node, the gimbal keeps the subject locked in frame without any human intervention.
+The system combines a **Raspberry Pi 4**, an **IP webcam mobile application**, a **deep neural network (DNN) face detector**, and a **dual stepper motor pan-tilt mechanism**. It runs entirely on the edge, no cloud. Just plug in, power up, and the gimbal handles the rest. Whether you are recording a lecture, streaming a presentation, or setting up an unattended surveillance node, the gimbal keeps the subject locked in frame without any human intervention.
 
 ---
 
-## 🏗️ How It Works
+## How It Works
 
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': {'fontSize':'24px','fontFamily':'Arial','background':'transparent','primaryColor':'transparent','primaryTextColor':'#ffffff','primaryBorderColor':'#888888','lineColor':'#888888','secondaryColor':'transparent','tertiaryColor':'transparent'}}}%%
@@ -43,7 +44,7 @@ The pipeline is a closed feedback loop. Each frame captured from the IP webcam i
 
 ---
 
-## 🔧 System Overview
+## System Overview
 
 | Layer | Component | Role |
 |---|---|---|
@@ -60,6 +61,7 @@ The pipeline is a closed feedback loop. Each frame captured from the IP webcam i
 ## 3-D Printed Parts and Assembly
 
 The mechanical frame of the gimbal is fully 3D-printed, making it easy to replicate, modify, and repair. All parts were designed in **AutoCAD** and printed.
+![3-D Printed System Parts](<CAD drawings.jpeg>)
 
 
 ---
@@ -67,12 +69,12 @@ The mechanical frame of the gimbal is fully 3D-printed, making it easy to replic
 ## Circuit Diagram
 
 The electronics are built around the Raspberry Pi's GPIO header. Each stepper motor is driven by a dedicated A4988 or DRV8825 driver module, which handles the high-current coil switching while the Pi only provides step, direction, and enable signals.
+![Circuit Diagram](<Circuit Diagram.jpeg>)
 
 
-```
-```
+---
 
-### Complete Data Flow
+## Complete Data Flow
 
 1. **Capture** — The IP webcam streams MJPEG frames over HTTP to the Raspberry Pi.
 2. **Preprocess** — Each frame is resized to 640 px width to reduce inference time.
@@ -85,6 +87,7 @@ The electronics are built around the Raspberry Pi's GPIO header. Each stepper mo
 9. **Actuate** — Pan and tilt motors move asynchronously in background threads.
 10. **Repeat** — The loop runs continuously, keeping the speaker centered.
 
-```
+![System Diagram](<Full system.jpeg>)
+---
 
 
