@@ -104,8 +104,4 @@ The electronics are built around the Raspberry Pi's GPIO header. Each stepper mo
 
 ---
 
-## Image Gallery (Responsive & Centered)
-
-<!-- Image gallery removed per undo request -->
-
 
