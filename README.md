@@ -94,29 +94,6 @@ The electronics are built around the Raspberry Pi's GPIO header. Each stepper mo
 
 ## Image Gallery (Responsive & Centered)
 
-Below is a responsive gallery that centers images and places the next image beside it when space allows. The thumbnails are uniform and maintain aspect ratio. Use the `images/` folder shipped with this repo.
-
-<div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;align-items:center;padding:8px;">
-    <img src="images/image1.svg" alt="Image 1" style="max-width:48%;height:auto;display:block;object-fit:cover;border-radius:8px;"/>
-    <img src="images/image2.svg" alt="Image 2" style="max-width:48%;height:auto;display:block;object-fit:cover;border-radius:8px;"/>
-    <img src="images/image3.svg" alt="Image 3" style="max-width:48%;height:auto;display:block;object-fit:cover;border-radius:8px;"/>
-    <img src="images/image4.svg" alt="Image 4" style="max-width:48%;height:auto;display:block;object-fit:cover;border-radius:8px;"/>
-    <img src="images/image5.svg" alt="Image 5" style="max-width:48%;height:auto;display:block;object-fit:cover;border-radius:8px;"/>
-    <img src="images/image6.svg" alt="Image 6" style="max-width:48%;height:auto;display:block;object-fit:cover;border-radius:8px;"/>
-</div>
-
-### Usage: Embed a responsive gallery in Markdown
-
-Copy this snippet into any Markdown file to render a centered, responsive gallery:
-
-```
-<div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;align-items:center;padding:8px;">
-    <img src="images/image1.svg" alt="Image 1" style="max-width:48%;height:auto;display:block;object-fit:cover;border-radius:8px;"/>
-    <img src="images/image2.svg" alt="Image 2" style="max-width:48%;height:auto;display:block;object-fit:cover;border-radius:8px;"/>
-    <!-- add more images as needed -->
-</div>
-```
-
-This layout keeps images centered, places images side-by-side when horizontal space permits, and stacks them on narrow screens.
+<!-- Image gallery removed per undo request -->
 
 
